@@ -1,0 +1,24 @@
+
+div,
+button,
+textarea,
+span,
+input,
+select{
+    box-sizing: border-box;
+}
+
+div{
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    background-color: transparent;
+}
+
+.main-container {
+    background: radial-gradient(circle at center, #f5dd9a, #dbad2c);
+}
+
+.line {
+    display: flex;
+    flex-direction: row;
+}
