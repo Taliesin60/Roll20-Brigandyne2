@@ -15,10 +15,39 @@ div{
 }
 
 .main-container {
-    background: radial-gradient(circle at center, #f5dd9a, #dbad2c);
+    background: url("https://raw.githubusercontent.com/Taliesin60/Roll20-Brigandyne2/first_push/background.jpg") repeat;
+    padding: 20px;
+}
+
+.margin {
+    width: 20px;
 }
 
 .line {
     display: flex;
     flex-direction: row;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.space {
+    justify-content: space-evenly;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button, input[type=number] {
+    -moz-appearance: textfield;
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.career-input {
+    width: 30px !important;
+}
+
+.value-input{
+    -moz-appearance: textfield;
+    width: 50px !important;
 }

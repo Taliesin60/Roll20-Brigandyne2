@@ -219,7 +219,8 @@
         <div>
             <div>
                 <div>
-                    <div>
+                    <div class="line space">
+                        <h2>Nom du personnage</h2>
                         <input type="text" name="attr_character_name" placeholder="Nom du personnage" />
                     </div>
                 </div>
@@ -232,26 +233,32 @@
                     <input type="checkbox" name="attr_chkaffdmagie" value="1" title="Afficher/masquer la section magie" checked /><span>e</span>
                 </div> -->
             </div>
-            <div class="line">
-                <div>Vitalité</div>
-                <div>
-                    <input type="number" name="attr_vitalite" value="0" title="Vitalité courante" />
-                    /
-                    <input type="number" name="attr_VM" value="0" title="Vitalité maximum" />
+            <div class="line space">
+                <div class="column" >
+                    <h3>Vitalité</h3>
+                    <div>
+                        <input type="number" name="attr_vitalite" value="0" title="Vitalité courante" />
+                        /
+                        <input type="number" name="attr_VM" value="0" title="Vitalité maximum" readonly />
+                    </div>
                 </div>
-                <div>Sang-Froid</div>
-                <div>
-                    <input type="number" name="attr_sang_froid" value="0" title="Sang-Froid actuel" />
-                    /
-                    <input type="number" name="attr_SFM" value="0" title="Sang-froid maximums" />
+                <div class="column" >
+                    <h3>Sang-Froid</h3>
+                    <div>
+                        <input type="number" name="attr_sang_froid" value="0" title="Sang-Froid actuel" />
+                        /
+                        <input type="number" name="attr_SFM" value="0" title="Sang-froid maximums" readonly />
+                    </div>
                 </div>
-                <div>Initiative</div>
-                <div>
-                    <input type="number" name="attr_INIT" value="0" title="Initiative" />
+                <div class="column" >
+                    <h3>Initiative</h3>
+                    <div>
+                        <input type="number" name="attr_INIT" value="0" title="Initiative" readonly />
+                    </div>
                 </div>
             </div>
             <div>
-                <div>Protection</div>
+                <h3>Protection</h3>
                 <div>
                     <input type="number" name="attr_protection" value="0" title="Protection" />
                     <input type="text" name="attr_protection_name" title="Nom de la protection" />
@@ -263,160 +270,180 @@
     <div>
         <div>
             <div class="line">
-                <input type="number" min="0" max="6" name="attr_COMNumber" value="0" title="Combat, nombre de cases" />
+                <input class="career-input" type="number" min="0" max="6" name="attr_COMNumber" value="0" title="Combat, nombre de cases" />
                 <button type="roll" name="COM" title="Jet de Combat" value="&{template:tmpl} {{pc=@{character_name}}} {{name=Combat (COM)}} {{roll=[[1d100cs1cf100]]}} {{target=[[@{COM}+(?{Bonus(+)/Malus(-)|0})[Bonus/Malus]]]}}">COM</button>
-                <input type="number" name="attr_COMInit" value="0" title="Combat, valeur initiale" />
+                <input class="value-input" type="number" name="attr_COMInit" value="0" title="Combat, valeur initiale" />
                 <input type="checkbox" name="attr_COM1" value="5" title="Combat, première case" />
                 <input type="checkbox" name="attr_COM2" value="5" title="Combat, deuxième case" />
                 <input type="checkbox" name="attr_COM3" value="5" title="Combat, troisième case" />
                 <input type="checkbox" name="attr_COM4" value="5" title="Combat, quatrième case" />
                 <input type="checkbox" name="attr_COM5" value="5" title="Combat, cinquième case" />
                 <input type="checkbox" name="attr_COM6" value="5" title="Combat, sixième case" />
-                <input type="number" name="attr_COM" value="0" title="Combat, valeur finale" readonly />
-            </div>
-            <div class="line">
-                <input type="number" min="0" max="6" name="attr_CNSNumber" value="0" title="Connaissances, nombre de cases" />
+                <input class="value-input" type="number" name="attr_COM" value="0" title="Combat, valeur finale" readonly />
+                <div class="margin" ></div>
+                <input class="career-input" type="number" min="0" max="6" name="attr_CNSNumber" value="0" title="Connaissances, nombre de cases" />
                 <button type="roll" name="CNS" title="Jet de Connaissances" value="&{template:tmpl} {{pc=@{character_name}}} {{name=Connaissances (CNS)}} {{roll=[[1d100cs1cf100]]}} {{target=[[@{CNS}+(?{Bonus(+)/Malus(-)|0})[Bonus/Malus]]]}}">CNS</button>
-                <input type="number" name="attr_CNSInit" value="0" title="Connaissances, valeur initiale" />
+                <input class="value-input" type="number" name="attr_CNSInit" value="0" title="Connaissances, valeur initiale" />
                 <input type="checkbox" name="attr_CNS1" value="5" title="Connaissances, première case" />
                 <input type="checkbox" name="attr_CNS2" value="5" title="Connaissances, deuxième case" />
                 <input type="checkbox" name="attr_CNS3" value="5" title="Connaissances, troisième case" />
                 <input type="checkbox" name="attr_CNS4" value="5" title="Connaissances, quatrième case" />
                 <input type="checkbox" name="attr_CNS5" value="5" title="Connaissances, cinquième case" />
                 <input type="checkbox" name="attr_CNS6" value="5" title="Connaissances, sixième case" />
-                <input type="number" name="attr_CNS" value="0" title="Connaissances, valeur finale" readonly />
+                <input class="value-input" type="number" name="attr_CNS" value="0" title="Connaissances, valeur finale" readonly />
             </div>
             <div class="line">
-                <input type="number" min="0" max="6" name="attr_DISNumber" value="0" title="Discrétion, nombre de cases" />
+
+            </div>
+            <div class="line">
+                <input class="career-input" type="number" min="0" max="6" name="attr_DISNumber" value="0" title="Discrétion, nombre de cases" />
                 <button type="roll" name="DIS" title="Jet de Discrétion" value="&{template:tmpl} {{pc=@{character_name}}} {{name=Discrétion (DIS)}} {{roll=[[1d100cs1cf100]]}} {{target=[[@{DIS}+(?{Bonus(+)/Malus(-)|0})[Bonus/Malus]]]}}">DIS</button>
-                <input type="number" name="attr_DISInit" value="0" title="Discrétion, valeur initiale" />
+                <input class="value-input" type="number" name="attr_DISInit" value="0" title="Discrétion, valeur initiale" />
                 <input type="checkbox" name="attr_DIS1" value="5" title="Discrétion, première case" />
                 <input type="checkbox" name="attr_DIS2" value="5" title="Discrétion, deuxième case" />
                 <input type="checkbox" name="attr_DIS3" value="5" title="Discrétion, troisième case" />
                 <input type="checkbox" name="attr_DIS4" value="5" title="Discrétion, quatrième case" />
                 <input type="checkbox" name="attr_DIS5" value="5" title="Discrétion, cinquième case" />
                 <input type="checkbox" name="attr_DIS6" value="5" title="Discrétion, sixième case" />
-                <input type="number" name="attr_DIS" value="0" title="Discrétion, valeur finale" readonly />
-            </div>
-            <div class="line">
-                <input type="number" min="0" max="6" name="attr_ENDNumber" value="0" title="Endurance, nombre de cases" />
+                <input class="value-input" type="number" name="attr_DIS" value="0" title="Discrétion, valeur finale" readonly />
+                <div class="margin" ></div>
+                <input class="career-input" type="number" min="0" max="6" name="attr_ENDNumber" value="0" title="Endurance, nombre de cases" />
                 <button type="roll" name="END" title="Jet de Endurance" value="&{template:tmpl} {{pc=@{character_name}}} {{name=Endurance (END)}} {{roll=[[1d100cs1cf100]]}} {{target=[[@{END}+(?{Bonus(+)/Malus(-)|0})[Bonus/Malus]]]}}">END</button>
-                <input type="number" name="attr_ENDInit" value="0" title="Endurance, valeur initiale" />
+                <input class="value-input" type="number" name="attr_ENDInit" value="0" title="Endurance, valeur initiale" />
                 <input type="checkbox" name="attr_END1" value="5" title="Endurance, première case" />
                 <input type="checkbox" name="attr_END2" value="5" title="Endurance, deuxième case" />
                 <input type="checkbox" name="attr_END3" value="5" title="Endurance, troisième case" />
                 <input type="checkbox" name="attr_END4" value="5" title="Endurance, quatrième case" />
                 <input type="checkbox" name="attr_END5" value="5" title="Endurance, cinquième case" />
                 <input type="checkbox" name="attr_END6" value="5" title="Endurance, sixième case" />
-                <input type="number" name="attr_END" value="0" title="Endurance, valeur finale" readonly />
+                <input class="value-input" type="number" name="attr_END" value="0" title="Endurance, valeur finale" readonly />
             </div>
             <div class="line">
-                <input type="number" min="0" max="6" name="attr_FORNumber" value="0" title="Force, nombre de cases" />
+                <input class="career-input" type="number" min="0" max="6" name="attr_FORNumber" value="0" title="Force, nombre de cases" />
                 <button type="roll" name="FOR" title="Jet de Force" value="&{template:tmpl} {{pc=@{character_name}}} {{name=Force (FOR)}} {{roll=[[1d100cs1cf100]]}} {{target=[[@{FOR}+(?{Bonus(+)/Malus(-)|0})[Bonus/Malus]]]}}">FOR</button>
-                <input type="number" name="attr_FORInit" value="0" title="Force, valeur initiale" />
+                <input class="value-input" type="number" name="attr_FORInit" value="0" title="Force, valeur initiale" />
                 <input type="checkbox" name="attr_FOR1" value="5" title="Force, première case" />
                 <input type="checkbox" name="attr_FOR2" value="5" title="Force, deuxième case" />
                 <input type="checkbox" name="attr_FOR3" value="5" title="Force, troisième case" />
                 <input type="checkbox" name="attr_FOR4" value="5" title="Force, quatrième case" />
                 <input type="checkbox" name="attr_FOR5" value="5" title="Force, cinquième case" />
                 <input type="checkbox" name="attr_FOR6" value="5" title="Force, sixième case" />
-                <input type="number" name="attr_FOR" value="0" title="Force, valeur finale" readonly />
-            </div>
-            <div class="line">
-                <input type="number" min="0" max="6" name="attr_HABNumber" value="0" title="Habilité, nombre de cases" />
+                <input class="value-input" type="number" name="attr_FOR" value="0" title="Force, valeur finale" readonly />
+                <div class="margin" ></div>
+                <input class="career-input" type="number" min="0" max="6" name="attr_HABNumber" value="0" title="Habilité, nombre de cases" />
                 <button type="roll" name="HAB" title="Jet de Habilité" value="&{template:tmpl} {{pc=@{character_name}}} {{name=Habilité (HAB)}} {{roll=[[1d100cs1cf100]]}} {{target=[[@{HAB}+(?{Bonus(+)/Malus(-)|0})[Bonus/Malus]]]}}">HAB</button>
-                <input type="number" name="attr_HABInit" value="0" title="Habilité, valeur initiale" />
+                <input class="value-input" type="number" name="attr_HABInit" value="0" title="Habilité, valeur initiale" />
                 <input type="checkbox" name="attr_HAB1" value="5" title="Habilité, première case" />
                 <input type="checkbox" name="attr_HAB2" value="5" title="Habilité, deuxième case" />
                 <input type="checkbox" name="attr_HAB3" value="5" title="Habilité, troisième case" />
                 <input type="checkbox" name="attr_HAB4" value="5" title="Habilité, quatrième case" />
                 <input type="checkbox" name="attr_HAB5" value="5" title="Habilité, cinquième case" />
                 <input type="checkbox" name="attr_HAB6" value="5" title="Habilité, sixième case" />
-                <input type="number" name="attr_HAB" value="0" title="Habilité, valeur finale" readonly />
+                <input class="value-input" type="number" name="attr_HAB" value="0" title="Habilité, valeur finale" readonly />
             </div>
             <div class="line">
-                <input type="number" min="0" max="6" name="attr_MAGNumber" value="0" title="Magie, nombre de cases" />
+                <input class="career-input" type="number" min="0" max="6" name="attr_HABNumber" value="0" title="Habilité, nombre de cases" />
+                <button type="roll" name="HAB" title="Jet de Habilité" value="&{template:tmpl} {{pc=@{character_name}}} {{name=Habilité (HAB)}} {{roll=[[1d100cs1cf100]]}} {{target=[[@{HAB}+(?{Bonus(+)/Malus(-)|0})[Bonus/Malus]]]}}">HAB</button>
+                <input class="value-input" type="number" name="attr_HABInit" value="0" title="Habilité, valeur initiale" />
+                <input type="checkbox" name="attr_HAB1" value="5" title="Habilité, première case" />
+                <input type="checkbox" name="attr_HAB2" value="5" title="Habilité, deuxième case" />
+                <input type="checkbox" name="attr_HAB3" value="5" title="Habilité, troisième case" />
+                <input type="checkbox" name="attr_HAB4" value="5" title="Habilité, quatrième case" />
+                <input type="checkbox" name="attr_HAB5" value="5" title="Habilité, cinquième case" />
+                <input type="checkbox" name="attr_HAB6" value="5" title="Habilité, sixième case" />
+                <input class="value-input" type="number" name="attr_HAB" value="0" title="Habilité, valeur finale" readonly />
+                <div class="margin" ></div>
+                <input class="career-input" type="number" min="0" max="6" name="attr_MAGNumber" value="0" title="Magie, nombre de cases" />
                 <button type="roll" name="MAG" title="Jet de Magie" value="&{template:tmpl} {{pc=@{character_name}}} {{name=Magie (MAG)}} {{roll=[[1d100cs1cf100]]}} {{target=[[@{MAG}+(?{Bonus(+)/Malus(-)|0})[Bonus/Malus]]]}}">MAG</button>
-                <input type="number" name="attr_MAGInit" value="0" title="Magie, valeur initiale" />
+                <input class="value-input" type="number" name="attr_MAGInit" value="0" title="Magie, valeur initiale" />
                 <input type="checkbox" name="attr_MAG1" value="5" title="Magie, première case" />
                 <input type="checkbox" name="attr_MAG2" value="5" title="Magie, deuxième case" />
                 <input type="checkbox" name="attr_MAG3" value="5" title="Magie, troisième case" />
                 <input type="checkbox" name="attr_MAG4" value="5" title="Magie, quatrième case" />
                 <input type="checkbox" name="attr_MAG5" value="5" title="Magie, cinquième case" />
                 <input type="checkbox" name="attr_MAG6" value="5" title="Magie, sixième case" />
-                <input type="number" name="attr_MAG" value="0" title="Magie, valeur finale" readonly />
+                <input class="value-input" type="number" name="attr_MAG" value="0" title="Magie, valeur finale" readonly />
             </div>
             <div class="line">
-                <input type="number" min="0" max="6" name="attr_MVTNumber" value="0" title="Mouvement, nombre de cases" />
+                <input class="career-input" type="number" min="0" max="6" name="attr_MVTNumber" value="0" title="Mouvement, nombre de cases" />
                 <button type="roll" name="MVT" title="Jet de Mouvement" value="&{template:tmpl} {{pc=@{character_name}}} {{name=Mouvement (MVT)}} {{roll=[[1d100cs1cf100]]}} {{target=[[@{MVT}+(?{Bonus(+)/Malus(-)|0})[Bonus/Malus]]]}}">MVT</button>
-                <input type="number" name="attr_MVTInit" value="0" title="Mouvement, valeur initiale" />
+                <input class="value-input" type="number" name="attr_MVTInit" value="0" title="Mouvement, valeur initiale" />
                 <input type="checkbox" name="attr_MVT1" value="5" title="Mouvement, première case" />
                 <input type="checkbox" name="attr_MVT2" value="5" title="Mouvement, deuxième case" />
                 <input type="checkbox" name="attr_MVT3" value="5" title="Mouvement, troisième case" />
                 <input type="checkbox" name="attr_MVT4" value="5" title="Mouvement, quatrième case" />
                 <input type="checkbox" name="attr_MVT5" value="5" title="Mouvement, cinquième case" />
                 <input type="checkbox" name="attr_MVT6" value="5" title="Mouvement, sixième case" />
-                <input type="number" name="attr_MVT" value="0" title="Mouvement, valeur finale" readonly />
-            </div>
-            <div class="line">
-                <input type="number" min="0" max="6" name="attr_PERNumber" value="0" title="Perception, nombre de cases" />
+                <input class="value-input" type="number" name="attr_MVT" value="0" title="Mouvement, valeur finale" readonly />
+                <div class="margin" ></div>
+                <input class="career-input" type="number" min="0" max="6" name="attr_PERNumber" value="0" title="Perception, nombre de cases" />
                 <button type="roll" name="PER" title="Jet de Perception" value="&{template:tmpl} {{pc=@{character_name}}} {{name=Perception (PER)}} {{roll=[[1d100cs1cf100]]}} {{target=[[@{PER}+(?{Bonus(+)/Malus(-)|0})[Bonus/Malus]]]}}">PER</button>
-                <input type="number" name="attr_PERInit" value="0" title="Perception, valeur initiale" />
+                <input class="value-input" type="number" name="attr_PERInit" value="0" title="Perception, valeur initiale" />
                 <input type="checkbox" name="attr_PER1" value="5" title="Perception, première case" />
                 <input type="checkbox" name="attr_PER2" value="5" title="Perception, deuxième case" />
                 <input type="checkbox" name="attr_PER3" value="5" title="Perception, troisième case" />
                 <input type="checkbox" name="attr_PER4" value="5" title="Perception, quatrième case" />
                 <input type="checkbox" name="attr_PER5" value="5" title="Perception, cinquième case" />
                 <input type="checkbox" name="attr_PER6" value="5" title="Perception, sixième case" />
-                <input type="number" name="attr_PER" value="0" title="Perception, valeur finale" readonly />
+                <input class="value-input" type="number" name="attr_PER" value="0" title="Perception, valeur finale" readonly />
             </div>
             <div class="line">
-                <input type="number" min="0" max="6" name="attr_SOCNumber" value="0" title="Sociabilité, nombre de cases" />
+                <input class="career-input" type="number" min="0" max="6" name="attr_PERNumber" value="0" title="Perception, nombre de cases" />
+                <button type="roll" name="PER" title="Jet de Perception" value="&{template:tmpl} {{pc=@{character_name}}} {{name=Perception (PER)}} {{roll=[[1d100cs1cf100]]}} {{target=[[@{PER}+(?{Bonus(+)/Malus(-)|0})[Bonus/Malus]]]}}">PER</button>
+                <input class="value-input" type="number" name="attr_PERInit" value="0" title="Perception, valeur initiale" />
+                <input type="checkbox" name="attr_PER1" value="5" title="Perception, première case" />
+                <input type="checkbox" name="attr_PER2" value="5" title="Perception, deuxième case" />
+                <input type="checkbox" name="attr_PER3" value="5" title="Perception, troisième case" />
+                <input type="checkbox" name="attr_PER4" value="5" title="Perception, quatrième case" />
+                <input type="checkbox" name="attr_PER5" value="5" title="Perception, cinquième case" />
+                <input type="checkbox" name="attr_PER6" value="5" title="Perception, sixième case" />
+                <input class="value-input" type="number" name="attr_PER" value="0" title="Perception, valeur finale" readonly />
+                <div class="margin" ></div>
+                <input class="career-input" type="number" min="0" max="6" name="attr_SOCNumber" value="0" title="Sociabilité, nombre de cases" />
                 <button type="roll" name="SOC" title="Jet de Sociabilité" value="&{template:tmpl} {{pc=@{character_name}}} {{name=Sociabilité (SOC)}} {{roll=[[1d100cs1cf100]]}} {{target=[[@{SOC}+(?{Bonus(+)/Malus(-)|0})[Bonus/Malus]]]}}">SOC</button>
-                <input type="number" name="attr_SOCInit" value="0" title="Sociabilité, valeur initiale" />
+                <input class="value-input" type="number" name="attr_SOCInit" value="0" title="Sociabilité, valeur initiale" />
                 <input type="checkbox" name="attr_SOC1" value="5" title="Sociabilité, première case" />
                 <input type="checkbox" name="attr_SOC2" value="5" title="Sociabilité, deuxième case" />
                 <input type="checkbox" name="attr_SOC3" value="5" title="Sociabilité, troisième case" />
                 <input type="checkbox" name="attr_SOC4" value="5" title="Sociabilité, quatrième case" />
                 <input type="checkbox" name="attr_SOC5" value="5" title="Sociabilité, cinquième case" />
                 <input type="checkbox" name="attr_SOC6" value="5" title="Sociabilité, sixième case" />
-                <input type="number" name="attr_SOC" value="0" title="Sociabilité, valeur finale" readonly />
+                <input class="value-input" type="number" name="attr_SOC" value="0" title="Sociabilité, valeur finale" readonly />
             </div>
             <div class="line">
-                <input type="number" min="0" max="6" name="attr_SURNumber" value="0" title="Survie, nombre de cases" />
+                <input class="career-input" type="number" min="0" max="6" name="attr_SURNumber" value="0" title="Survie, nombre de cases" />
                 <button type="roll" name="SUR" title="Jet de Survie" value="&{template:tmpl} {{pc=@{character_name}}} {{name=Survie (SUR)}} {{roll=[[1d100cs1cf100]]}} {{target=[[@{SUR}+(?{Bonus(+)/Malus(-)|0})[Bonus/Malus]]]}}">SUR</button>
-                <input type="number" name="attr_SURInit" value="0" title="Survie, valeur initiale" />
+                <input class="value-input" type="number" name="attr_SURInit" value="0" title="Survie, valeur initiale" />
                 <input type="checkbox" name="attr_SUR1" value="5" title="Survie, première case" />
                 <input type="checkbox" name="attr_SUR2" value="5" title="Survie, deuxième case" />
                 <input type="checkbox" name="attr_SUR3" value="5" title="Survie, troisième case" />
                 <input type="checkbox" name="attr_SUR4" value="5" title="Survie, quatrième case" />
                 <input type="checkbox" name="attr_SUR5" value="5" title="Survie, cinquième case" />
                 <input type="checkbox" name="attr_SUR6" value="5" title="Survie, sixième case" />
-                <input type="number" name="attr_SUR" value="0" title="Survie, valeur finale" readonly />
-            </div>
-            <div class="line">
-                <input type="number" min="0" max="6" name="attr_TIRNumber" value="0" title="Tir, nombre de cases" />
+                <input class="value-input" type="number" name="attr_SUR" value="0" title="Survie, valeur finale" readonly />
+                <div class="margin" ></div>
+                <input class="career-input" type="number" min="0" max="6" name="attr_TIRNumber" value="0" title="Tir, nombre de cases" />
                 <button type="roll" name="TIR" title="Jet de Tir" value="&{template:tmpl} {{pc=@{character_name}}} {{name=Tir (TIR)}} {{roll=[[1d100cs1cf100]]}} {{target=[[@{TIR}+(?{Bonus(+)/Malus(-)|0})[Bonus/Malus]]]}}">TIR</button>
-                <input type="number" name="attr_TIRInit" value="0" title="Tir, valeur initiale" />
+                <input class="value-input" type="number" name="attr_TIRInit" value="0" title="Tir, valeur initiale" />
                 <input type="checkbox" name="attr_TIR1" value="5" title="Tir, première case" />
                 <input type="checkbox" name="attr_TIR2" value="5" title="Tir, deuxième case" />
                 <input type="checkbox" name="attr_TIR3" value="5" title="Tir, troisième case" />
                 <input type="checkbox" name="attr_TIR4" value="5" title="Tir, quatrième case" />
                 <input type="checkbox" name="attr_TIR5" value="5" title="Tir, cinquième case" />
                 <input type="checkbox" name="attr_TIR6" value="5" title="Tir, sixième case" />
-                <input type="number" name="attr_TIR" value="0" title="Tir, valeur finale" readonly />
+                <input class="value-input" type="number" name="attr_TIR" value="0" title="Tir, valeur finale" readonly />
             </div>
             <div class="line">
-                <input type="number" min="0" max="6" name="attr_VOLNumber" value="0" title="Volonté, nombre de cases" />
+                <input class="career-input" type="number" min="0" max="6" name="attr_VOLNumber" value="0" title="Volonté, nombre de cases" />
                 <button type="roll" name="VOL" title="Jet de Volonté" value="&{template:tmpl} {{pc=@{character_name}}} {{name=Volonté (VOL)}} {{roll=[[1d100cs1cf100]]}} {{target=[[@{VOL}+(?{Bonus(+)/Malus(-)|0})[Bonus/Malus]]]}}">VOL</button>
-                <input type="number" name="attr_VOLInit" value="0" title="Volonté, valeur initiale" />
+                <input class="value-input" type="number" name="attr_VOLInit" value="0" title="Volonté, valeur initiale" />
                 <input type="checkbox" name="attr_VOL1" value="5" title="Volonté, première case" />
                 <input type="checkbox" name="attr_VOL2" value="5" title="Volonté, deuxième case" />
                 <input type="checkbox" name="attr_VOL3" value="5" title="Volonté, troisième case" />
                 <input type="checkbox" name="attr_VOL4" value="5" title="Volonté, quatrième case" />
                 <input type="checkbox" name="attr_VOL5" value="5" title="Volonté, cinquième case" />
                 <input type="checkbox" name="attr_VOL6" value="5" title="Volonté, sixième case" />
-                <input type="number" name="attr_VOL" value="0" title="Volonté, valeur finale" readonly />
+                <input class="value-input" type="number" name="attr_VOL" value="0" title="Volonté, valeur finale" readonly />
             </div>
         </div>
     </div>
