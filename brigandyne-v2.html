@@ -194,7 +194,7 @@
             });
         });
     });
-     on("change:COM change:CNS change:END change:FOR change:MVT change:PER change:VOL", function(){
+    on("change:COM change:CNS change:END change:FOR change:MVT change:PER change:VOL", function(){
         getAttrs(["COM","CNS","END","FOR","MVT","PER","VOL"], function(values) {
             var vol = parseInt(values.VOL) || 0;
             var bc = Math.trunc((parseInt(values.COM) || 0) / 10);
@@ -211,6 +211,263 @@
                 SFM: v5+c5+bc
             });
         });
+    on("change:carriere", function(){
+            getAttrs(["carriere"], function(values) {
+                var number = parseInt(values.carriere) || 0;
+                var combat = 0;
+                var connaissances = 0;
+                var discretion = 0;
+                var endurance = 0;
+                var force = 0;
+                var habilite = 0;
+                var magie = 0;
+                var mouvement = 0;
+                var perception = 0;
+                var sociabilite = 0;
+                var survie = 0;
+                var tir = 0;
+                var volonte = 0;
+                if(number == 1)
+                {
+                    combat = 3;
+                    connaissances = 0;
+                    discretion = 1;
+                    endurance = 2;
+                    force = 2;
+                    habilite = 1;
+                    magie = 0;
+                    mouvement = 3;
+                    perception = 2;
+                    sociabilite = 3;
+                    survie = 2;
+                    tir = 3;
+                    volonte = 2;
+                }
+                if(number == 2)
+                {
+                    combat = 0;
+                    connaissances = 0;
+                    discretion = 0;
+                    endurance = 0;
+                    force = 0;
+                    habilite = 0;
+                    magie = 0;
+                    mouvement = 0;
+                    perception = 0;
+                    sociabilite = 0;
+                    survie = 0;
+                    tir = 0;
+                    volonte = 0;
+                }
+                if(number == 3)
+                {
+                    combat = 0;
+                    connaissances = 0;
+                    discretion = 0;
+                    endurance = 0;
+                    force = 0;
+                    habilite = 0;
+                    magie = 0;
+                    mouvement = 0;
+                    perception = 0;
+                    sociabilite = 0;
+                    survie = 0;
+                    tir = 0;
+                    volonte = 0;
+                }
+                if(number == 4)
+                {
+                    combat = 0;
+                    connaissances = 0;
+                    discretion = 0;
+                    endurance = 0;
+                    force = 0;
+                    habilite = 0;
+                    magie = 0;
+                    mouvement = 0;
+                    perception = 0;
+                    sociabilite = 0;
+                    survie = 0;
+                    tir = 0;
+                    volonte = 0;
+                }
+                if(number == 5)
+                {
+                    combat = 0;
+                    connaissances = 0;
+                    discretion = 0;
+                    endurance = 0;
+                    force = 0;
+                    habilite = 0;
+                    magie = 0;
+                    mouvement = 0;
+                    perception = 0;
+                    sociabilite = 0;
+                    survie = 0;
+                    tir = 0;
+                    volonte = 0;
+                }
+                if(number == 6)
+                {
+                    combat = 0;
+                    connaissances = 0;
+                    discretion = 0;
+                    endurance = 0;
+                    force = 0;
+                    habilite = 0;
+                    magie = 0;
+                    mouvement = 0;
+                    perception = 0;
+                    sociabilite = 0;
+                    survie = 0;
+                    tir = 0;
+                    volonte = 0;
+                }
+                if(number == 7)
+                {
+                    combat = 0;
+                    connaissances = 0;
+                    discretion = 0;
+                    endurance = 0;
+                    force = 0;
+                    habilite = 0;
+                    magie = 0;
+                    mouvement = 0;
+                    perception = 0;
+                    sociabilite = 0;
+                    survie = 0;
+                    tir = 0;
+                    volonte = 0;
+                }
+                if(number == 8)
+                {
+                    combat = 0;
+                    connaissances = 0;
+                    discretion = 0;
+                    endurance = 0;
+                    force = 0;
+                    habilite = 0;
+                    magie = 0;
+                    mouvement = 0;
+                    perception = 0;
+                    sociabilite = 0;
+                    survie = 0;
+                    tir = 0;
+                    volonte = 0;
+                }
+                if(number == 9)
+                {
+                    combat = 0;
+                    connaissances = 0;
+                    discretion = 0;
+                    endurance = 0;
+                    force = 0;
+                    habilite = 0;
+                    magie = 0;
+                    mouvement = 0;
+                    perception = 0;
+                    sociabilite = 0;
+                    survie = 0;
+                    tir = 0;
+                    volonte = 0;
+                }
+                if(number == 10)
+                {
+                    combat = 0;
+                    connaissances = 0;
+                    discretion = 0;
+                    endurance = 0;
+                    force = 0;
+                    habilite = 0;
+                    magie = 0;
+                    mouvement = 0;
+                    perception = 0;
+                    sociabilite = 0;
+                    survie = 0;
+                    tir = 0;
+                    volonte = 0;
+                }
+                if(number == 11)
+                {
+                    combat = 0;
+                    connaissances = 0;
+                    discretion = 0;
+                    endurance = 0;
+                    force = 0;
+                    habilite = 0;
+                    magie = 0;
+                    mouvement = 0;
+                    perception = 0;
+                    sociabilite = 0;
+                    survie = 0;
+                    tir = 0;
+                    volonte = 0;
+                }
+                if(number == 12)
+                {
+                    combat = 0;
+                    connaissances = 0;
+                    discretion = 0;
+                    endurance = 0;
+                    force = 0;
+                    habilite = 0;
+                    magie = 0;
+                    mouvement = 0;
+                    perception = 0;
+                    sociabilite = 0;
+                    survie = 0;
+                    tir = 0;
+                    volonte = 0;
+                }
+                if(number == 13)
+                {
+                    combat = 0;
+                    connaissances = 0;
+                    discretion = 0;
+                    endurance = 0;
+                    force = 0;
+                    habilite = 0;
+                    magie = 0;
+                    mouvement = 0;
+                    perception = 0;
+                    sociabilite = 0;
+                    survie = 0;
+                    tir = 0;
+                    volonte = 0;
+                }
+                if(number == 14)
+                {
+                    combat = 0;
+                    connaissances = 0;
+                    discretion = 0;
+                    endurance = 0;
+                    force = 0;
+                    habilite = 0;
+                    magie = 0;
+                    mouvement = 0;
+                    perception = 0;
+                    sociabilite = 0;
+                    survie = 0;
+                    tir = 0;
+                    volonte = 0;
+                }
+
+                setAttrs({
+                    COMNumber: combat
+                    CONNumber: connaissances
+                    DISNumber: discretion
+                    ENDNumber: endurance
+                    HABNumber: habilite
+                    MAGNumber: magie
+                    MVTNumber: mouvement
+                    PERNumber: perception
+                    SOCNumber: sociabilite
+                    SURNumber: survie
+                    TIRNumber: tir
+                    VOLNumber: volonte
+                });
+            });
+        });
     });
 </script>
  <!-- ===== FEUILLE =====  -->
@@ -222,16 +479,114 @@
                     <div class="line space">
                         <h2>Nom du personnage</h2>
                         <input type="text" name="attr_character_name" placeholder="Nom du personnage" />
+                        <h2>Carrière</h2>
+                        <select name="attr_carriere" title="Carrière">
+                            <option value="1">Cocher</option>
+                            <option value="2">Garde-Chasse, Garde-Faune</option>
+                            <option value="3">Maître-chien, Veneur</option>
+                            <option value="4">Messager, Courrier</option>
+                            <option value="5">Palefrenier</option>
+                            <option value="6">Péager, Écuyer</option>
+                            <option value="7">Prévôt, Collecteur d'impôts</option>
+                            <option value="8">Valet, Domestique</option>
+                            <option value="9">Bailli, Vidame</option>
+                            <option value="10">Chevalier</option>
+                            <option value="11">Chevalier du vol</option>
+                            <option value="12">Courtisan, Flagorneur</option>
+                            <option value="13">Dépravé</option>
+                            <option value="14">Diplomate, Conseiller</option>
+                            <option value="15">Gentilhomme, Hobereau</option>
+                            <option value="16">Noble de robe</option>
+                            <option value="17">Aubergiste, Tavernier</option>
+                            <option value="18">Charpentier</option>
+                            <option value="19">Chirurgien-Barbier</option>
+                            <option value="20">Colporteur, Itiniérant</option>
+                            <option value="21">Forgeron, Armurier</option>
+                            <option value="22">Marchand, Négoiant</option>
+                            <option value="23">Manouvrier, Portefaix</option>
+                            <option value="24">Mineur</option>
+                            <option value="25">Assassin, Tueur à gages</option>
+                            <option value="26">Bandit de grand chemin</option>
+                            <option value="27">Détrousseur, Truand</option>
+                            <option value="28">Hors-la-loi, Rebelle</option>
+                            <option value="29">Pirate</option>
+                            <option value="30">Racketteur</option>
+                            <option value="31">Ribaud</option>
+                            <option value="32">Voleur de bétail</option>
+                            <option value="33">Acrobate, Jongleur</option>
+                            <option value="34">Comédien, Ventriloque</option>
+                            <option value="35">Diseur de bonne aventure</option>
+                            <option value="36">Dresseur</option>
+                            <option value="37">Lanceur de couteaux</option>
+                            <option value="38">Lutteur de foire</option>
+                            <option value="39">Ménestrel, Musicien</option>
+                            <option value="40">Prestidigitateur, Escamoteur</option>
+                            <option value="41">Apothicaire, Herboriste</option>
+                            <option value="42">Architecte</option>
+                            <option value="43">Avocat, Procureur</option>
+                            <option value="44">Cartographe</option>
+                            <option value="45">Estudiant</option>
+                            <option value="46">Ingénieur, Inventeur</option>
+                            <option value="47">Médecin, Docteur</option>
+                            <option value="48">Scribe, Écrivain public</option>
+                            <option value="49">Agitateur, Anarchiste</option>
+                            <option value="50">Cambrioleur, Monte-en-l'air</option>
+                            <option value="51">Charlatan, Escroc</option>
+                            <option value="52">Contrebandier, Receleur</option>
+                            <option value="53">Espion</option>
+                            <option value="54">Joueur professionnel</option>
+                            <option value="55">Pilleur de tombes</option>
+                            <option value="56">Tire-Laine, Vide-gousset</option>
+                            <option value="57">Archer, Arbalestier</option>
+                            <option value="58">Champion, Gladiateur</option>
+                            <option value="59">Chasseur de primes</option>
+                            <option value="60">Combattant des tunnels</option>
+                            <option value="61">Garde du corps, Estafier</option>
+                            <option value="62">Mercenaire</option>
+                            <option value="63">Tueur de monstres</option>
+                            <option value="64">Spadassin, Duelliste</option>
+                            <option value="65">Artilleur, Pétardier</option>
+                            <option value="66">Bourreau</option>
+                            <option value="67">Cavalier</option>
+                            <option value="68">Éclaireur</option>
+                            <option value="69">Garde</option>
+                            <option value="70">Limier</option>
+                            <option value="71">Patrouilleur, Garde-route</option>
+                            <option value="72">Soldat</option>
+                            <option value="73">Alchimiste</option>
+                            <option value="74">Astrologue, Devin</option>
+                            <option value="75">Élémentaliste</option>
+                            <option value="76">Illusionniste</option>
+                            <option value="77">Juge-Mage</option>
+                            <option value="78">Magelame</option>
+                            <option value="79">Nécromancien</option>
+                            <option value="80">Sorcier</option>
+                            <option value="81">Chiffonnier</option>
+                            <option value="82">Égoutier</option>
+                            <option value="83">Mendiant</option>
+                            <option value="84">Prostitué</option>
+                            <option value="85">Ratier</option>
+                            <option value="86">Rebouteux</option>
+                            <option value="87">Trafiquant de cadavres</option>
+                            <option value="88">Vagabond</option>
+                            <option value="89">Batelier</option>
+                            <option value="90">Berger, Pâtre</option>
+                            <option value="91">Bûcheron</option>
+                            <option value="92">Chasseur, Trappeur</option>
+                            <option value="93">Guide-convoyeur</option>
+                            <option value="94">Marin</option>
+                            <option value="95">Paysan, Journalier</option>
+                            <option value="96">Pêcheur</option>
+                            <option value="88">Chasseur de mages, Purgiste</option>
+                            <option value="89">Druide</option>
+                            <option value="90">Fanatique</option>
+                            <option value="91">Initié</option>
+                            <option value="92">Inquisiteur</option>
+                            <option value="93">Prêcheur, Missionnaire</option>
+                            <option value="94">Templier, Chevalier d'Abel, Missionnaire</option>
+                        </select>
                     </div>
                 </div>
-                <!--<div>
-                    <input type="checkbox" name="attr_chkaffcarr" value="1" title="Afficher/masquer les éléments de carrière du personnage" checked /><span>U</span>
-                    <input type="checkbox" name="attr_chkaffdesc" value="1" title="Afficher/masquer les éléments descriptifs du personnage" checked /><span>E</span>
-                    <input type="checkbox" name="attr_chkaffarmes" value="1" title="Afficher/masquer les Armes de Mêlée du personnage" checked /><span style="font-weight: bolder;font-size: 200%;">&#9876;</span>
-                    <input type="checkbox" name="attr_chkafftir" value="1" title="Afficher/masquer les Armes de Tir du personnage" checked /><span style="font-weight: bolder;font-size: 250%;">&#10165;</span>
-                    <input type="checkbox" name="attr_chkaffposs" value="1" title="Afficher/masquer les possessions du personnage" checked /><span>x</span>
-                    <input type="checkbox" name="attr_chkaffdmagie" value="1" title="Afficher/masquer la section magie" checked /><span>e</span>
-                </div> -->
             </div>
             <div class="line space">
                 <div class="column" >
@@ -270,7 +625,7 @@
     <div>
         <div>
             <div class="line">
-                <input class="career-input" type="number" min="0" max="6" name="attr_COMNumber" value="0" title="Combat, nombre de cases" />
+                <input class="career-input" type="number" min="0" max="6" name="attr_COMNumber" value="0" title="Combat, nombre de cases" hidden />
                 <button type="roll" name="COM" title="Jet de Combat" value="&{template:tmpl} {{pc=@{character_name}}} {{name=Combat (COM)}} {{roll=[[1d100cs1cf100]]}} {{target=[[@{COM}+(?{Bonus(+)/Malus(-)|0})[Bonus/Malus]]]}}">COM</button>
                 <input class="value-input" type="number" name="attr_COMInit" value="0" title="Combat, valeur initiale" />
                 <input type="checkbox" name="attr_COM1" value="5" title="Combat, première case" />
@@ -291,9 +646,6 @@
                 <input type="checkbox" name="attr_CNS5" value="5" title="Connaissances, cinquième case" />
                 <input type="checkbox" name="attr_CNS6" value="5" title="Connaissances, sixième case" />
                 <input class="value-input" type="number" name="attr_CNS" value="0" title="Connaissances, valeur finale" readonly />
-            </div>
-            <div class="line">
-
             </div>
             <div class="line">
                 <input class="career-input" type="number" min="0" max="6" name="attr_DISNumber" value="0" title="Discrétion, nombre de cases" />
@@ -448,429 +800,6 @@
         </div>
     </div>
     <!-- FIN CARAC -->
-
-    <!-- CARRIERE -->
-    <div class="bgblock">
-        <input type="checkbox" name="attr_chkaffcarr" value="1" class="aff" checked />
-        <div class="affichage">
-            <div class="ligne titre"><span>U</span>CARRIÈRE</div>
-            <div class="ligne">
-                <div class="mycol coldeb">
-                    <div class="coltitre">XP</div>
-                    <div class="inps">
-                        <input type="number" name="attr_experience" value="0" class="min" title="Points d'expérience courants" />
-                    </div>
-                </div>
-                <div class="mycol colmid">
-                    <div class="coltitre">Archétype</div>
-                    <div class="inps">
-                        <input type="text" name="attr_archetype" style="width: 220px;" placeholder="Archétype" />
-                    </div>
-                </div>
-                <div class="mycol colfin">
-                    <div class="coltitre fin">Carrière</div>
-                    <div class="inps">
-                        <input type="text" name="attr_carriere" style="width: 150px;" placeholder="Carrière" />
-                    </div>
-                </div>
-                <div class="mycol colune">
-                    <div class="coltitre fin">Protection</div>
-                    <div class="inps">
-                        <input type="number" name="attr_protection" value="0" class="min" title="Protection" />
-                        <input type="text" name="attr_protectiondesc" style="width: 240px;" placeholder="Armure, bouclier ..." />
-                    </div>
-                </div>
-            </div>
-            <div class="ligne">
-                <div class="mycol coldeb">
-                    <div class="coltitre">Spécialités</div>
-                    <div class="inps">
-                        <textarea name="attr_specialites" style="width: 390px; height: 40px;" placeholder="Spécialités"></textarea>
-                    </div>
-                </div>
-                <div class="mycol colfin">
-                    <div class="coltitre fin">Coup Spécial</div>
-                    <div class="inps">
-                        <textarea name="attr_coupspecial" style="width: 390px; height: 40px;" placeholder="Coup Spécial"></textarea>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- FIN CARRIERE -->
-    <!-- DESCRIPTION -->
-    <div class="bgblock bgsombre">
-        <input type="checkbox" name="attr_chkaffdesc" value="1" class="aff" checked />
-        <div class="affichage">
-            <div class="ligne titre"><span>E</span>DESCRIPTION</div>
-            <div class="ligne">
-                <div class="mycol colune">
-                    <div class="coltitre fin">Peuple</div>
-                    <div class="inps">
-                        <input type="text" name="attr_peuple" style="width: 150px;" placeholder="Peuple" />
-                    </div>
-                </div>
-                <div class="mycol coldeb">
-                    <div class="coltitre">Sexe</div>
-                    <div class="inps">
-                        <input type="text" name="attr_sexe" style="width: 70px;" placeholder="Sexe" />
-                    </div>
-                </div>
-                <div class="mycol colmid">
-                    <div class="coltitre">Taille</div>
-                    <div class="inps">
-                        <input type="text" name="attr_taille" style="width: 70px;" placeholder="Taille" />
-                    </div>
-                </div>
-                <div class="mycol colmid">
-                    <div class="coltitre">Poids</div>
-                    <div class="inps">
-                        <input type="text" name="attr_poids" style="width: 70px;" placeholder="Poids" />
-                    </div>
-                </div>
-                <div class="mycol colmid">
-                    <div class="coltitre">Cheveux</div>
-                    <div class="inps">
-                        <input type="text" name="attr_cheveux" style="width: 80px;" placeholder="Cheveux" />
-                    </div>
-                </div>
-                <div class="mycol colmid">
-                    <div class="coltitre">Yeux</div>
-                    <div class="inps">
-                        <input type="text" name="attr_yeux" style="width: 80px;" placeholder="Yeux" />
-                    </div>
-                </div>
-                <div class="mycol colfin">
-                    <div class="coltitre fin">Main directrice</div>
-                    <div class="inps" style="width: 160px;">
-                        <input type="radio" name="attr_main" value="Droitier" class="dispchk" title="Main directrice droite" /><span>Droitier</span>
-                        <input type="radio" name="attr_main" value="Gaucher" class="dispchk" title="Main directrice gauche" /><span>Gaucher</span>
-                    </div>
-                </div>
-            </div>
-            <div class="ligne">
-                <div class="mycol coldeb">
-                    <div class="coltitre">Langues</div>
-                    <div class="inps">
-                        <textarea name="attr_langues" style="width: 390px; height: 20px;" placeholder="Langues"></textarea>
-                    </div>
-                </div>
-                <div class="mycol colfin">
-                    <div class="coltitre fin">Traits de Caractère</div>
-                    <div class="inps">
-                        <textarea name="attr_traits" style="width: 390px; height: 20px;" placeholder="Traits de Caractère"></textarea>
-                    </div>
-                </div>
-            </div>
-            <div class="ligne">
-                <div class="mycol coldeb">
-                    <div class="coltitre">Description</div>
-                    <div class="inps">
-                        <textarea name="attr_description" style="width: 390px; height: 40px;" placeholder="Description"></textarea>
-                    </div>
-                </div>
-                <div class="mycol colfin">
-                    <div class="coltitre fin">Notes</div>
-                    <div class="inps">
-                        <textarea name="attr_notes" style="width: 390px; height: 40px;" placeholder="Description"></textarea>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- FIN DESCRIPTION -->
-    <!-- ARMES MELEES -->
-    <div class="bgblock">
-        <input type="checkbox" name="attr_chkaffarmes" value="1" class="aff" checked />
-        <div class="affichage">
-            <div class="ligne titre"><span>&#9876;</span>MÊLÉE</div>
-            <div class="ttable">
-                <div class="trow">
-                    <div class="thead" style="width: 200px; max-width: 200px;" >Arme</div>
-                    <div class="thead" style="width: 35px; max-width: 35px;">&nbsp;</div>
-                    <div class="thead" style="width: 50px; max-width: 50px;">Mod.</div>
-                    <div class="thead" style="width: 50px; max-width: 50px;">Dégâts</div>
-                    <div class="thead" style="width: 60px; max-width: 60px;">Allonge</div>
-                    <div class="thead" style="width: 50px; max-width: 50px;">Dis°</div>
-                    <div class="thead" style="width: 50px; max-width: 50px;">Main</div>
-                    <div class="thead">Spécial</div>
-                </div>
-                <div class="trow">
-                    <div class="tcell"><input type="text" name="attr_melee_nom_bag" value="Bagarre, mains nues"  style="width: 100%;" placeholder="Arme de mêlée" /></div>
-                    <div class="tcell"><button type="roll" class="atk" name="MainsNues" title="Attaque à mains nues" value="&{template:tmpl} {{pc=@{character_name}}} {{name=@{melee_nom_bag} (COM)}} {{roll=[[1d100cs1cf100]]}} {{target=[[@{COM}+(@{melee_mod_bag})[Mod.]+(?{Bonus(+)/Malus(-)|0})[Bonus/Malus]]]}} {{dmg=[[@{BF}[BF]+(@{melee_deg_bag})[Arme]]]}} {{dmgmin=[[1]]}}"></button></div>
-                    <div class="tcell"><input type="number" name="attr_melee_mod_bag" value="0" class="min arme" title="Modificateur à l'attaque" /></div>
-                    <div class="tcell"><input type="number" name="attr_melee_deg_bag" value="-2" class="min arme" title="Dégâts" /></div>
-                    <div class="tcell">
-                        <SELECT name="attr_melee_all_bag" title="Allonge">
-                                <OPTION value="-">&#9660;</OPTION>
-                                <OPTION>AA</OPTION>
-                                <OPTION>A</OPTION>
-                                <OPTION>B</OPTION>
-                                <OPTION>C</OPTION>
-                                <OPTION>D</OPTION>
-                                <OPTION>E</OPTION>
-                                <OPTION selected>F</OPTION>
-                        </SELECT>
-                    </div>
-                    <div class="tcell">
-                        <SELECT name="attr_melee_diss_bag" title="Dissimulation">
-                                <OPTION value="-" selected>&#9660;</OPTION>
-                                <OPTION>AA</OPTION>
-                                <OPTION>A</OPTION>
-                                <OPTION>B</OPTION>
-                                <OPTION>C</OPTION>
-                                <OPTION>D</OPTION>
-                                <OPTION>E</OPTION>
-                                <OPTION>F</OPTION>
-                        </SELECT>
-                    </div>
-                    <div class="tcell">
-                        <SELECT name="attr_melee_main_bag" title="Mains">
-                                <OPTION value="-">&#9660;</OPTION>
-                                <OPTION value="1">&#9995;</OPTION>
-                                <OPTION value="1.5" selected>&#9995;|&#9995;</OPTION>
-                                <OPTION value="2">&#9995; &#9995;</OPTION>
-                        </SELECT>
-                    </div>
-                    <div class="tcell"><input type="text" name="attr_melee_spec_bag" value="Dégâts temporaires, lutte"  style="width: 100%;"  placeholder="Spécial" /></div>
-                </div>
-            </div>
-            <fieldset class="repeating_armes">
-                <div class="ttable">
-                    <div class="trow">
-                        <div class="tcell" style="width: 200px; max-width: 200px;"><input type="text" name="attr_melee_nom" value="" style="width: 100%;" placeholder="Arme de mêlée" /></div>
-                        <div class="tcell" style="width: 35px; max-width: 35px;"><button type="roll" class="atk" name="Attaque" title="Jet d'attaque" value="&{template:tmpl} {{pc=@{character_name}}} {{name=@{melee_nom} (COM)}} {{roll=[[1d100cs1cf100]]}} {{target=[[@{COM}+(@{melee_mod})[Mod.]+(?{Bonus(+)/Malus(-)|0})[Bonus/Malus]]]}} {{dmg=[[@{BF}[BF]+(@{melee_deg})[Arme]]]}} {{dmgmin=[[1]]}}"></button></div>
-                        <div class="tcell" style="width: 50px; max-width: 50px;"><input type="number" name="attr_melee_mod" value="0" class="min arme" title="Modificateur à l'attaque" /></div>
-                        <div class="tcell" style="width: 50px; max-width: 50px;"><input type="number" name="attr_melee_deg" value="0" class="min arme" title="Dégâts" /></div>
-                        <div class="tcell" style="width: 60px; max-width: 60px;">
-                            <SELECT name="attr_melee_all" title="Allonge">
-                                    <OPTION value="-">&#9660;</OPTION>
-                                    <OPTION>AA</OPTION>
-                                    <OPTION>A</OPTION>
-                                    <OPTION>B</OPTION>
-                                    <OPTION selected>C</OPTION>
-                                    <OPTION>D</OPTION>
-                                    <OPTION>E</OPTION>
-                                    <OPTION>F</OPTION>
-                            </SELECT>
-                        </div>
-                        <div class="tcell" style="width: 50px; max-width: 50px;">
-                            <SELECT name="attr_melee_diss" title="Dissimulation">
-                                    <OPTION value="-">&#9660;</OPTION>
-                                    <OPTION>AA</OPTION>
-                                    <OPTION>A</OPTION>
-                                    <OPTION>B</OPTION>
-                                    <OPTION selected>C</OPTION>
-                                    <OPTION>D</OPTION>
-                                    <OPTION>E</OPTION>
-                                    <OPTION>F</OPTION>
-                            </SELECT>
-                        </div>
-                        <div class="tcell" style="width: 50px; max-width: 50px;">
-                            <SELECT name="attr_melee_main" title="Mains">
-                                    <OPTION value="-">&#9660;</OPTION>
-                                    <OPTION value="1" selected>&#9995;</OPTION>
-                                    <OPTION value="1.5">&#9995;|&#9995;</OPTION>
-                                    <OPTION value="2">&#9995; &#9995;</OPTION>
-                            </SELECT>
-                        </div>
-                        <div class="tcell"><input type="text" name="attr_melee_spec" style="width: 100%;" placeholder="Spécial" /></div>
-                    </div>
-                </div>
-            </fieldset>
-        </div>
-    </div>
-    <!-- FIN ARMES MELEES -->
-    <!-- ARMES TIR -->
-    <div class="bgblock bgsombre">
-        <input type="checkbox" name="attr_chkafftir" value="1" class="aff" checked />
-        <div class="affichage">
-            <div class="ligne titre"><span>&#10165;</span>TIR</div>
-            <div class="ttable">
-                <div class="trow">
-                    <div class="thead" style="width: 200px; max-width: 200px;" >Arme</div>
-                    <div class="thead" style="width: 35px; max-width: 35px;" >&nbsp;</div>
-                    <div class="thead" style="width: 50px; max-width: 50px;">Mod.</div>
-                    <div class="thead" style="width: 90px; max-width: 90px;">Dégâts</div>
-                    <div class="thead" style="width: 50px; max-width: 50px;">Portée</div>
-                    <div class="thead" style="width: 40px; max-width: 40px;">Dis°</div>
-                    <div class="thead" style="width: 50px; max-width: 50px;">Main</div>
-                    <div class="thead" style="width: 50px; max-width: 50px;">Mun.</div>
-                    <div class="thead">Spécial</div>
-                </div>
-            </div>
-            <fieldset class="repeating_tirs">
-                <div class="ttable">
-                    <div class="trow">
-                        <div class="tcell" style="width: 200px; max-width: 200px;"><input type="text" name="attr_tir_nom" value="" style="width: 100%;" placeholder="Arme de tir" /></div>
-                        <div class="tcell" style="width: 35px; max-width: 35px;"><button type="roll" class="atk" name="Attaque" title="Jet d'attaque" value="&{template:tmpl} {{pc=@{character_name}}} {{name=@{tir_nom} (TIR)}} {{roll=[[1d100cs1cf100]]}} {{target=[[@{TIR}+(@{tir_mod})[Mod.]+(?{Bonus(+)/Malus(-)|0})[Bonus/Malus]]]}} {{dmg=[[@{tir_for}[BF]+(@{tir_deg})[Arme]]]}} {{dmgmin=[[1]]}}"></button></div>
-                        <div class="tcell" style="width: 50px; max-width: 50px;"><input type="number" name="attr_tir_mod" value="0" class="min arme" title="Modificateur à l'attaque" /></div>
-                        <div class="tcell" style="width: 90px; max-width: 90px;">
-                            <input type="number" name="attr_tir_deg" value="0" class="min arme" title="Dégâts" />
-                            <input type="checkbox" name="attr_tir_for" value="[[@{BF}]]" class="dispchk" title="Appliquer le Bonus de Force aux dégâts" /><span>BF</span>
-                        </div>
-                        <div class="tcell" style="width: 50px; max-width: 50px;">
-                            <input type="text" name="attr_tir_port" value="" class="min arme" style="width: 100%;" title="Portée" />
-                        </div>
-                        <div class="tcell" style="width: 40px; max-width: 40px;">
-                            <SELECT name="attr_tir_diss" title="Dissimulation">
-                                    <OPTION value="-">&#9660;</OPTION>
-                                    <OPTION>AA</OPTION>
-                                    <OPTION>A</OPTION>
-                                    <OPTION>B</OPTION>
-                                    <OPTION selected>C</OPTION>
-                                    <OPTION>D</OPTION>
-                                    <OPTION>E</OPTION>
-                                    <OPTION>F</OPTION>
-                            </SELECT>
-                        </div>
-                        <div class="tcell" style="width: 50px; max-width: 50px;">
-                            <SELECT name="attr_tir_main" title="Mains">
-                                    <OPTION value="-">&#9660;</OPTION>
-                                    <OPTION value="1">&#9995;</OPTION>
-                                    <OPTION value="1.5">&#9995;|&#9995;</OPTION>
-                                    <OPTION value="2" selected>&#9995; &#9995;</OPTION>
-                            </SELECT>
-                        </div>
-                        <div class="tcell" style="width: 50px; max-width: 50px;"><input type="number" name="attr_tir_mun" value="0" class="min arme" title="Munitions restantes" /></div>
-                        <div class="tcell"><input type="text" name="attr_tir_spec" style="width: 100%;" placeholder="Spécial" /></div>
-                    </div>
-                </div>
-            </fieldset>
-        </div>    </div>
-    <!-- FIN ARMES TIR -->
-    <!-- MAGIE -->
-    <div class="bgblock">
-        <input type="checkbox" name="attr_chkaffdmagie" value="1" class="aff" checked />
-        <div class="affichage">
-            <div class="ligne titre"><span>e</span>MAGIE</div>
-            <div class="ligne"> <!-- DOMAINES -->
-                <div class="mycol coldeb">
-                    <div class="coltitre">Dons élémentaires</div>
-                    <div class="inps">
-                        <input type="checkbox" name="attr_mag_air" value="1" class="dispchk" title="Air" /><span>Air</span>
-                        <input type="checkbox" name="attr_mag_eau" value="1" class="dispchk" title="Eau" /><span>Eau</span>
-                        <input type="checkbox" name="attr_mag_feu" value="1" class="dispchk" title="Feu" /><span>Feu</span>
-                        <input type="checkbox" name="attr_mag_terre" value="1" class="dispchk" title="Terre" /><span>Terre</span>
-                    </div>
-                </div>
-                <div class="mycol colmid">
-                    <div class="coltitre">Maléfices de magie noire</div>
-                    <div class="inps">
-                        <input type="checkbox" name="attr_mag_alchimie" value="1" class="dispchk" title="Alchimie" /><span>Alchi.</span>
-                        <input type="checkbox" name="attr_mag_demonisme" value="1" class="dispchk" title="Démonisme" /><span>Démon.</span>
-                        <input type="checkbox" name="attr_mag_illusions" value="1" class="dispchk" title="Illusions" /><span>Illu.</span>
-                        <input type="checkbox" name="attr_mag_necromancie" value="1" class="dispchk" title="Nécromancie" /><span>Nécro.</span>
-                    </div>
-                </div>
-                <div class="mycol colmid">
-                    <div class="coltitre">Miracles de magie blanche</div>
-                    <div class="inps">
-                        <input type="checkbox" name="attr_mag_divination" value="1" class="dispchk" title="Divination" /><span>Divi.</span>
-                        <input type="checkbox" name="attr_mag_enchantements" value="1" class="dispchk" title="Enchantements" /><span>Enchant.</span>
-                        <input type="checkbox" name="attr_mag_protection" value="1" class="dispchk" title="Protection" /><span>Protec.</span>
-                        <input type="checkbox" name="attr_mag_psyche" value="1" class="dispchk" title="Pysché" /><span>Psyché</span>
-                    </div>
-                </div>
-                <div class="mycol colfin">
-                    <div class="coltitre fin">&nbsp;</div>
-                    <div class="inps">
-                        <input type="checkbox" name="attr_mag_animale" value="1" class="dispchk" title="Voie animale" /><span>V. animale</span>
-                    </div>
-                </div>
-            </div> <!-- FIN DOMAINES -->
-            <div class="ligne"> <!-- TOURS et FAM -->
-                <div class="mycol coldeb">
-                    <div class="coltitre">Tours de Magie</div>
-                    <div class="inps">
-                        <textarea name="attr_mag_tours" style="width: 390px; height: 40px;" placeholder="Tours"></textarea>
-                    </div>
-                </div>
-                <div class="mycol colfin">
-                    <div class="coltitre fin">Familier</div>
-                    <div class="inps">
-                        <textarea name="attr_mag_familier" style="width: 390px; height: 40px;" placeholder="Familier"></textarea>
-                    </div>
-                </div>
-            </div> <!-- FIN TOURS et FAM -->
-            <!-- SORTS -->
-            <div class="ttable">
-                <div class="trow">
-                    <div class="thead" style="width: 200px; max-width: 200px;">Sortilèges</div>
-                    <div class="thead" style="width: 35px; max-width: 35px;">&nbsp;</div>
-                    <div class="thead" style="width: 65px; max-width: 65px;">Test</div>
-                    <div class="thead" style="width: 50px; max-width: 50px;">Diff</div>
-                    <div class="thead" style="width: 80px; max-width: 80px;">Durée</div>
-                    <div class="thead">Effet</div>
-                </div>
-            </div>
-            <fieldset class="repeating_sorts">
-                <div class="ttable">
-                    <div class="trow">
-                        <div class="tcell" style="width: 200px; max-width: 200px;">
-                            <input type="text" name="attr_sort_nom" value="" style="width: 100%;" placeholder="Sortilège" />
-                        </div>
-                        <div class="tcell" style="width: 35px; max-width: 35px;"><button type="roll" class="atk" name="Sort" title="Jet de Magie pour lancer le sort" value="&{template:tmpl} {{pc=@{character_name}}} {{name=@{sort_nom} (MAG)}} {{roll=[[1d100cs1cf100]]}} {{target=[[@{MAG}+(@{sort_diff})[Diff]+(?{Bonus(+)/Malus(-)|0})[Bonus/Malus]]]}} {{desc=(@{sort_duree}) @{sort_effet}}}"></button></div>
-                        <div class="tcell" style="width: 65px; max-width: 65px;">
-                            <SELECT name="attr_sort_test" title="Type de test">
-                                    <OPTION selected>Normal</OPTION>
-                                    <OPTION>/COM</OPTION>
-                                    <OPTION>/CNS</OPTION>
-                                    <OPTION>/DIS</OPTION>
-                                    <OPTION>/END</OPTION>
-                                    <OPTION>/FOR</OPTION>
-                                    <OPTION>/HAB</OPTION>
-                                    <OPTION>/MAG</OPTION>
-                                    <OPTION>/MVT</OPTION>
-                                    <OPTION>/PER</OPTION>
-                                    <OPTION>/SOC</OPTION>
-                                    <OPTION>/SRV</OPTION>
-                                    <OPTION>/TIR</OPTION>
-                                    <OPTION>/VOL</OPTION>
-                            </SELECT>
-                        </div>
-                        <div class="tcell" style="width: 50px; max-width: 50px;">
-                            <input type="number" name="attr_sort_diff" value="0" class="min arme" title="Difficulté/Modificateur au jet de MAG" />
-                        </div>
-                        <div class="tcell" style="width: 80px; max-width: 80px;">
-                            <input type="text" name="attr_sort_duree" value="" style="width: 100%;" placeholder="Durée" />
-                        </div>
-                        <div class="tcell">
-                            <textarea name="attr_sort_effet" style="width: 100%; height: 20px;" placeholder="Effet"></textarea>
-                        </div>
-                    </div>
-                </div>
-                <div class="ttable">
-                    <div class="trow sombre">
-                        <div class="thead" style="width: 70px; max-width: 70px;">Formule</div>
-                        <div class="tcell">
-                            <input type="text" name="attr_sort_formule" style="width: 100%;" placeholder="Formule" />
-                        </div>
-                    </div>
-                </div>
-            </fieldset>
-            <!-- FIN SORTS -->
-        </div>
-    </div>
-    <!-- FIN MAGIE -->
-    <!-- POSSESSIONS -->
-    <div class="bgblock bgsombre">
-        <input type="checkbox" name="attr_chkaffposs" value="1" class="aff" checked />
-        <div class="affichage">
-            <div class="ligne titre"><span>x</span>POSSESSIONS</div>
-            <div class="ligne">
-                <div class="mycol colune">
-                    <div class="inps">
-                        <textarea name="attr_possessions" style="width: 800px; height: 80px;" placeholder="Possessions"></textarea>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- FIN POSSESSIONS -->
-    <div> <!-- Pied -->
-        <label>Version 1.0 (29 Septembre 2022)</label>
-    </div>  <!-- FIN Pied -->
 </div> <!-- FIN FEUILLE -->
 <!-- === TEMPLATE   === -->
 <rolltemplate class="sheet-rolltemplate-tmpl">
